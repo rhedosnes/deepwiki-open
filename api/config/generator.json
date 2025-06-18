@@ -87,9 +87,16 @@
       }
     },
     "ollama": {
-      "default_model": "qwen3:1.7b",
+      "default_model": "gemma3:4b",
       "supportsCustomModel": true,
       "models": {
+        "gemma3:4b": {
+          "options": {
+            "temperature": 0.7,
+            "top_p": 0.8,
+            "num_ctx": 8000
+          }
+        },
         "qwen3:1.7b": {
           "options": {
             "temperature": 0.7,
